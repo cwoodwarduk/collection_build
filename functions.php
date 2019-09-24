@@ -20,7 +20,7 @@ function dbConn() :PDO{
  * @return array the data for each bike
  */
 function getData(PDO $db) :array {
-    $query = $db->prepare("SELECT `manufacturer`, `model`, `wheelset`, `groupset` FROM `myBikes`;");
+    $query = $db->prepare("SELECT `manufacturer`, `model`, `wheelset`, `groupset`, `image` FROM `myBikes`;");
     $query->execute();
     $result = $query->fetchAll();
     return $result;
@@ -35,17 +35,23 @@ function getData(PDO $db) :array {
  */
 function getBike(array $data) :string
 {
-    $output = '';
-    foreach ($data as $bike) {
-        $output .=
-            '<div class="tableContent">' .
-            '<div class = "manufacturer"><p>' . $bike['manufacturer'] . '</p>' . '</div>' .
-            '<div class = "model"><p>' . $bike['model'] . '</p>' . '</div>' .
-            '<div class = "wheelset"><p>' . $bike['wheelset'] . '</p>' . '</div>' .
-            '<div class = "groupset"><p>' . $bike['groupset'] . '</p>' . '</div>' .
-            '</div>';
+    if (count($data) === 5) {
+        $output = '';
+        foreach ($data as $bike) {
+            $output .=
+                '<div class="tableContent">' .
+                '<div class = "image"><img src="' . $bike['image'] . '" alt="picture of bike">' . '</img>' . '</div>' .
+                '<div><p>' . $bike['manufacturer'] . '</p>' . '</div>' .
+                '<div><p>' . $bike['model'] . '</p>' . '</div>' .
+                '<div><p>' . $bike['wheelset'] . '</p>' . '</div>' .
+                '<div><p>' . $bike['groupset'] . '</p>' . '</div>' .
+                '</div>';
+        }
+        return $output;
+    } else {
+        return 'Please check bike data is complete.';
     }
-    return $output;
+
 }
 
 ?>

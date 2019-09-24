@@ -19,6 +19,9 @@ require_once 'functions.php';
 
         <div class="tableHeadings">
             <div>
+                <h2>Picture</h2>
+            </div>
+            <div>
                 <h2>Manufacturer</h2>
             </div>
             <div>

@@ -17,3 +17,33 @@ h2 {
     font-size: 1.5rem;
 }
 
+section {
+    margin: 0 auto;
+}
+
+.tableHeadings {
+    overflow: auto;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.tableHeadings div {
+    float: left;
+    width: 25%;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.2rem;
+}
+
+.tableContent {
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.tableContent div {
+    float: left;
+    width: 25%;
+    font-family: font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.2rem;
+    border-bottom: 1px solid darkgrey;
+}
+

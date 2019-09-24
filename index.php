@@ -9,6 +9,7 @@ require_once 'functions.php';
 <head>
     <title>My Bike Collection</title>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 

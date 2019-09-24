@@ -6,7 +6,7 @@
  * @return PDO returns the database contents
  *
  */
-function dbConn(){
+function dbConn() :PDO{
     $db = new PDO('mysql:host=db; dbname=calumsCollection', 'root', 'password');
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $db;
@@ -19,7 +19,7 @@ function dbConn(){
  *
  * @return array the data for each bike
  */
-function getData($db) :array {
+function getData(PDO $db) :array {
     $query = $db->prepare("SELECT `manufacturer`, `model`, `wheelset`, `groupset` FROM `myBikes`;");
     $query->execute();
     $result = $query->fetchAll();

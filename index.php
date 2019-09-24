@@ -18,7 +18,7 @@ require_once 'functions.php';
         <h1>My Bike Collection</h1>
 
         <div class="tableHeadings">
-            <div>
+            <div class="pictureHeading">
                 <h2>Picture</h2>
             </div>
             <div>

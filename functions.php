@@ -26,6 +26,8 @@ function getData(PDO $db) :array {
     return $result;
 }
 
+
+
 /*
  * Takes data from getData output array and displays as HTML to be called into index.php
  *
@@ -35,7 +37,7 @@ function getData(PDO $db) :array {
  */
 function getBike(array $data) :string
 {
-    if (count($data) === 5) {
+    if (count($data[0]) === 5) {
         $output = '';
         foreach ($data as $bike) {
             $output .=

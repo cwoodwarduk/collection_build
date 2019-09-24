@@ -26,6 +26,7 @@ section {
 }
 
 .tableHeadings {
+    wdith: 100%;
     overflow: auto;
     margin: 0 auto;
     border-bottom: 2px solid black;
@@ -65,6 +66,62 @@ section {
 }
 
 .image img{
-    height: 140px;
+    height: auto;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1200px ) {
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .tableContent div {
+        height: 140px;
+    }
+
+    .tableContent div p {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+
+    .tableContent div {
+        height: 120px;
+        font-size: 1rem;
+    }
+
+    .tableContent div p {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .tableHeadings div {
+        width: 25%;
+    }
+
+    .tableContent div {
+        height: 140px;
+        width: 25%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .pictureHeading {
+        display: none;
+    }
 }
 

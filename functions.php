@@ -35,11 +35,11 @@ function getData(PDO $db) :array {
  *
  * @return a string of HTML code to be inserted to index.php to display on front end
  */
-function getBike(array $data) :string
+function getBike(array $bikes) :string
 {
-    if (count($data[0]) === 5) {
+    if (count($bikes[0]) === 5) {
         $output = '';
-        foreach ($data as $bike) {
+        foreach ($bikes as $bike) {
             $output .=
                 '<div class="tableContent">' .
                 '<div class = "image"><img src="' . $bike['image'] . '" alt="picture of bike">' . '</img>' . '</div>' .

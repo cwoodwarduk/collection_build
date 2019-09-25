@@ -27,6 +27,23 @@ section {
     margin: 0 auto;
 }
 
+.addContainer {
+    overflow: auto;
+}
+
+.buttonContainer {
+    float: left;
+    margin-left: 40px;
+}
+
+button {
+    height: 50px;
+    background-color: #cc0066;
+    border: 1px solid #800040;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .tableHeadings {
     wdith: 100%;
     overflow: auto;

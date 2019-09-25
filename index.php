@@ -21,6 +21,12 @@ $bike = getBike($data);
     <section>
         <h1>My Bike Collection</h1>
 
+        <div class="addContainer">
+            <div class="buttonContainer">
+                <a href="formPage.php"><button type="button">ADD BIKE</button></a>
+            </div>
+        </div>
+
         <div class="tableHeadings">
             <div class="pictureHeading">
                 <h2>Picture</h2>

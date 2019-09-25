@@ -23,7 +23,7 @@
     </div>
 
     <div class="addBikeForm">
-        <form method="post" action="upload.php.php">
+        <form method="post" action="upload.php">
             <div class="formLeft">
             1. Manufacturer: <br>
             <input type="text" name="manufacturer" required><br>

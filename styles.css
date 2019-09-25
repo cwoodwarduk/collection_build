@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-image: url("images/old-bicycle.jpg");
+    background-size: 100%;
+    background-position: top 70px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin: 70px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.tableHeadings {
+    wdith: 100%;
+    overflow: auto;
+    background-color: #eaeffa;
+}
+
+.tableHeadings div {
+    float: left;
+    padding-left: 8px;
+    width: 20%;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.tableContent {
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tableContent div {
+    float: left;
+    padding-left: 8px;
+    width: 20%;
+    height: 170px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #9494b8;
+}
+
+.tableContent div p {
+    padding-top: 60px;
+}
+
+.image {
+    padding: 10px;
+}
+
+.image img{
+    height: auto;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1200px ) {
+
+    .tableContent div {
+        height: 140px;
+    }
+
+    .tableContent div p {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+
+    /*.tableContent div {*/
+    /*    height: 120px;*/
+    /*}*/
+
+    .tableContent div p {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+
+    .tableHeadings div {
+        width: 25%;
+    }
+
+    .tableContent div {
+        height: 140px;
+        width: 25%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .pictureHeading {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px ) {
+    .tableContent div {
+        height: 160px;
+    }
+}
+

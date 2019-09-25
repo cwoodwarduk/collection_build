@@ -32,13 +32,13 @@
         <form method="post" action="upload.php">
             <div class="formLeft">
             1. Manufacturer: <br>
-            <input type="text" name="manufacturer" length="255" required><br>
+            <input type="text" name="manufacturer" length="255" placeholder="e.g. Bianchi" required><br>
             2. Model: <br>
-            <input type="text" name="model" length="255" required><br>
+            <input type="text" name="model" length="255" placeholder="e.g. Oltre XR4" required><br>
             3. Wheelset: <br>
             <select name="wheelset" required>
                 <option value="Mavic Aksium">Mavic Aksium</option>
-                <option value="Compagnolo Scirocco CX">Compagnolo Scirocco CX</option>
+                <option value="Compagnolo Scirocco CX">Campagnolo Scirocco CX</option>
                 <option value="DT R460">DT R460</option>
                 <option value="Zipp 303">Zipp 303</option>
                 <option value="Hope 20Five RS4">Hope 20Five RS4</option>

@@ -1,6 +1,10 @@
 <?php
 
 require_once 'functions.php';
+
+$db = dbConn();
+$data = getData($db);
+$bike = getBike($data);
 ?>
 
 <!DOCTYPE html>
@@ -35,11 +39,7 @@ require_once 'functions.php';
             </div>
         </div>
 
-        <?php
-        $db = dbConn();
-        $data = getData($db);
-        $bike = getBike($data);
-        echo $bike?>
+        <?php echo $bike?>
 
     </section>
 </body>

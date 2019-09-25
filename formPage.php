@@ -23,7 +23,8 @@
     </div>
 
     <div class="addBikeForm">
-        <form class="formLeft" method="post" action="functions.php">
+        <form method="post" action="upload.php.php">
+            <div class="formLeft">
             1. Manufacturer: <br>
             <input type="text" name="manufacturer" required><br>
             2. Model: <br>
@@ -44,13 +45,16 @@
                 <option value="Shimano Dura-Ace Di2 52-36/11-28">Shimano Dura-Ace Di2 52-36/11-28</option>
                 <option value="Campagnolo Potenza 52-36/11-29">Campagnolo Potenza 52-36/11-29</option>
             </select>
+            </div>
+
+            <div class="formRight" >
+                5. Copy and paste a URL link to your chosen image here:<br>
+                <input type="url" name="image" required><br>
+                <input class="submit" type="submit" name="submit" value="SUBMIT NEW BIKE">
+            </div>
         </form>
 
-        <form class="formRight" method="post" action="functions.php" required>
-            5. Copy and paste a URL link to your chosen image here:<br>
-            <input type="url" name="image"><br>
-            <input class="submit" type="submit" name="submit" value="SUBMIT NEW BIKE">
-        </form>
+
     </div>
 
 </section>

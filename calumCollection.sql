@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.27)
 # Database: calumCollection
-# Generation Time: 2019-09-25 08:13:38 +0000
+# Generation Time: 2019-09-25 14:42:05 +0000
 # ************************************************************
 
 
@@ -28,9 +28,9 @@ DROP TABLE IF EXISTS `myBikes`;
 CREATE TABLE `myBikes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `manufacturer` varchar(255) DEFAULT NULL,
-  `model` varchar(50) DEFAULT NULL,
-  `wheelset` varchar(70) DEFAULT NULL,
-  `groupset` varchar(100) DEFAULT NULL,
+  `model` varchar(255) DEFAULT NULL,
+  `wheelset` varchar(255) DEFAULT NULL,
+  `groupset` varchar(255) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -42,7 +42,10 @@ INSERT INTO `myBikes` (`id`, `manufacturer`, `model`, `wheelset`, `groupset`, `i
 VALUES
 	(1,'Cannondale','CAAD 8','Campagnolo Scirocco CX','Tiagra 50-34/11-28','images/Cannondale-CAAD8-2015-Tiagra.jpg'),
 	(2,'Fairlight','Secan','Hope 20Five RS4','Shimano GRX 600 2x 46-30/11-34','images/FAIRLIGHT-2018-SECAN.jpg'),
-	(3,'Specialized','Allez Sprint','DT R460','Shimano 105 52-36/11-28','images/ALLEZ_SPRINT-COMP-DISC.jpeg');
+	(3,'Specialized','Allez Sprint','DT R460','Shimano 105 52-36/11-28','images/ALLEZ_SPRINT-COMP-DISC.jpeg'),
+	(10,'Pinarello','F12','Mavic Aksium','Tiagra 50-34/11-28','https://racycles.azureedge.net/assets/standard/111375/large/pin_dgmaf12_dda_b_9-430_X_1.jpg'),
+	(11,'Pinarello','F12','Mavic Aksium','Tiagra 50-34/11-28','https://racycles.azureedge.net/assets/standard/111375/large/pin_dgmaf12_dda_b_9-430_X_1.jpg'),
+	(12,'Pinarello','F12','Mavic Aksium','Tiagra 50-34/11-28','https://racycles.azureedge.net/assets/standard/111375/large/pin_dgmaf12_dda_b_9-430_X_1.jpg');
 
 /*!40000 ALTER TABLE `myBikes` ENABLE KEYS */;
 UNLOCK TABLES;

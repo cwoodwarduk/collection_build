@@ -45,7 +45,7 @@ button {
 }
 
 .tableHeadings {
-    wdith: 100%;
+    width: 100%;
     overflow: auto;
     background-color: #eaeffa;
 }
@@ -66,7 +66,7 @@ button {
     float: left;
     padding-left: 8px;
     width: 20%;
-    height: 170px;
+    height: 180px;
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 1.5rem;
     border-bottom: 1px solid #9494b8;
@@ -81,8 +81,7 @@ button {
 }
 
 .image img{
-    height: auto;
-    max-width: 90%;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px ) {
@@ -97,10 +96,6 @@ button {
 }
 
 @media screen and (max-width: 1000px ) {
-
-    /*.tableContent div {*/
-    /*    height: 120px;*/
-    /*}*/
 
     .tableContent div p {
         padding-top: 20px;
@@ -132,4 +127,3 @@ button {
         height: 160px;
     }
 }
-

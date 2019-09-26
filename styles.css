@@ -27,8 +27,25 @@ section {
     margin: 0 auto;
 }
 
+.addContainer {
+    overflow: auto;
+}
+
+.buttonContainer {
+    float: left;
+    margin-left: 40px;
+}
+
+button {
+    height: 50px;
+    background-color: #cc0066;
+    border: 1px solid #800040;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .tableHeadings {
-    wdith: 100%;
+    width: 100%;
     overflow: auto;
     background-color: #eaeffa;
 }
@@ -49,7 +66,7 @@ section {
     float: left;
     padding-left: 8px;
     width: 20%;
-    height: 170px;
+    height: 180px;
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 1.5rem;
     border-bottom: 1px solid #9494b8;
@@ -64,8 +81,7 @@ section {
 }
 
 .image img{
-    height: auto;
-    max-width: 90%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1200px ) {
@@ -80,10 +96,6 @@ section {
 }
 
 @media screen and (max-width: 1000px ) {
-
-    /*.tableContent div {*/
-    /*    height: 120px;*/
-    /*}*/
 
     .tableContent div p {
         padding-top: 20px;
@@ -115,4 +127,3 @@ section {
         height: 160px;
     }
 }
-

@@ -44,9 +44,7 @@ $bike = getBike($data);
                 <h2>Groupset</h2>
             </div>
         </div>
-
         <?php echo $bike?>
 
     </section>
 </body>
-

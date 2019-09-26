@@ -1,11 +1,5 @@
 <?php
 
-
-//if(isset($_SESSION["formError"])) {
-//    echo "<h2>" . $_SESSION["formError"] . "</h2>";
-//    session_destroy();
-//}
-
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +53,6 @@
                 <input class="submit" type="submit" name="submit" value="SUBMIT NEW BIKE">
             </div>
         </form>
-
 
     </div>
 
